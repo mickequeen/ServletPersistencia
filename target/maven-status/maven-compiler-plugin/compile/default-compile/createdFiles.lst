@@ -1,0 +1,6 @@
+root\model\dao\exceptions\IllegalOrphanException.class
+root\model\dao\MasterClienteDAO.class
+root\model\entities\MasterCliente.class
+root\model\dao\exceptions\NonexistentEntityException.class
+root\model\dao\exceptions\PreexistingEntityException.class
+root\model\entities\MasterCliente_.class

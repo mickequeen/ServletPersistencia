@@ -26,8 +26,12 @@ public class MasterClienteDAO implements Serializable {
   public MasterClienteDAO(EntityManagerFactory emf) {
     this.emf = emf;
   }
-  private EntityManagerFactory emf = Persistence.createEntityManagerFactory("aplicacionesEmp_clasePersistencia_war_1.0-SNAPSHOTPU");
-
+  
+  public EntityManagerFactory emf = Persistence.createEntityManagerFactory("my_persistence_unit");
+  
+  public MasterClienteDAO() {
+  }
+  
   public EntityManager getEntityManager() {
     return emf.createEntityManager();
   }

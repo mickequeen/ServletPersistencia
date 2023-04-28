@@ -8,5 +8,23 @@
             30
         </session-timeout>
     </session-config>
+    <data-source>
+      <description> DataSource clientes</description>
+      <name>java:app/</name>
+      <class-name>org.postgresql.ds.PGSimpleDataSource</class-name>
+      <server-name>localhost</server-name>
+      <port-number>5432</port-number>
+      <database-name>master_clientes</database-name>
+      <user>postgres</user>
+      <password>1234</password>
+      <login-timeout>0</login-timeout>
+      <transactional>false</transactional>
+      <isolation-level>TRANSACTION_READ_COMMITTED</isolation-level>
+      <initial-pool-size>0</initial-pool-size>
+      <max-pool-size>5</max-pool-size>
+      <min-pool-size>2</min-pool-size>
+      <max-idle-time>0</max-idle-time>
+      <max-statements>50</max-statements>
+    </data-source>
     
 </web-app>
